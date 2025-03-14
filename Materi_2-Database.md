@@ -100,7 +100,7 @@ Tidak semua _database_ memiliki fungsi _relational_ lohh. Berikut adalah beberap
 
 ### Non-Relational
 
-Basis data `non0relasional` (sering disebut basis data **NoSQL**) berbeda dari basis data relasional tradisional karena basis data tersebut menyimpan datanya dalam bentuk non-tabular. Sebaliknya, database ini mungkin didasarkan pada struktur data seperti dokumen, JSON, dan format lainnya. Sebuah `dokumen` yang sangat rinci sekaligus berisi berbagai jenis informasi berbeda dalam format berbeda. `Kemampuan` untuk mencerna dan mengatur berbagai jenis informasi secara berdampingan membuat database non-relasional ini jauh lebih fleksibel dibandingkan database relasional.
+Basis data `non relasional` (sering disebut basis data **NoSQL**) berbeda dari basis data relasional tradisional karena basis data tersebut menyimpan datanya dalam bentuk non-tabular. Sebaliknya, database ini mungkin didasarkan pada struktur data seperti dokumen, JSON, dan format lainnya. Sebuah `dokumen` yang sangat rinci sekaligus berisi berbagai jenis informasi berbeda dalam format berbeda. `Kemampuan` untuk mencerna dan mengatur berbagai jenis informasi secara berdampingan membuat database non-relasional ini jauh lebih fleksibel dibandingkan database relasional.
 
 ![Contoh Dokumen MongoDB](image/Materi_2-Database/2-2.avif)
 
@@ -119,15 +119,29 @@ Basis data `non-relasional` sering digunakan ketika sejumlah besar data yang kom
 | Beberapa struktur data                 | Data yang kini dikumpulkan dari pengguna memiliki berbagai bentuk, mulai dari angka dan string, hingga konten foto dan video, hingga riwayat pesan. Basis data memerlukan kemampuan untuk menyimpan berbagai format informasi ini, memahami hubungan di antara format tersebut, dan melakukan kueri terperinci. Apa pun format informasi Anda, database non-relasional dapat menyusun tipe informasi berbeda secara bersamaan dalam dokumen yang sama. |
 | Dibangun untuk cloud                   | Basis data non-relasional bisa berukuran sangat besar. Dan karena mereka bisa, dalam beberapa kasus, tumbuh secara eksponensial, mereka memerlukan lingkungan hosting yang bisa tumbuh dan berkembang bersama mereka. Skalabilitas yang melekat pada cloud menjadikannya rumah ideal untuk database non-relasional.                                                                                                                                    |
 
-#### Contoh Non-Relational Database
+#### Jenis-jenis Non-Relational Database
 
-- MongoDB
-- Apache Cassandra
-- Apache CocuhDB
-- Neo4j
-- DinamoDB
+##### Document Based Database
+- Menyimpan data dalam format JSON, BSON, atau XML.
+- Setiap dokumen adalah objek yang dapat berisi berbagai atribut dan nilai.
+- Contoh: MongoDB, CouchDB
 
-Selengkapnya, teman-teman bisa cek pada url berikut [Beberapa Jenis Database Non-Relational](https://www.griyasis.com/10-jenis-database-nosql-terpopuler-2022)
+##### Key Value Store
+- Menyimpan data dalam bentuk pasangan kunci-nilai (key-value pair).
+- Sangat cepat dalam pencarian berdasarkan kunci.
+- Contoh: Redis, Amazon DynamoDB
+
+##### Column Oriented Database
+- Data disimpan dalam bentuk kolom, bukan baris, untuk optimasi kueri agregasi.
+- Cocok untuk sistem big data yang membutuhkan analisis data cepat.
+- Contoh: Apache Cassandra, HBase
+
+##### Graph Database
+- Berbasis node (entitas) dan edge (hubungan) untuk menyimpan data yang memiliki relasi kompleks.
+- Digunakan dalam sistem rekomendasi dan social network.
+- Contoh: Neo4j, ArangoDB
+
+Selengkapnya, teman-teman bisa cek pada url berikut [Beberapa Jenis Database Non-Relational](https://airbyte.com/top-etl-tools-for-sources/types-of-nosql-databases)
 
 ### Relational Database vs Non-Relational Database
 
@@ -138,6 +152,61 @@ Selengkapnya, teman-teman bisa cek pada url berikut [Beberapa Jenis Database Non
 | Integritas data | Tinggi dengan kepatuhan **ACID** penuh                             | Model konsistensi akhir                                    |
 | Performa        | Ditingkatkan dengan menambahkan lebih banyak sumber daya ke server | Ditingkatkan dengan menambahkan lebih banyak simpul server |
 | Penskalaan      | Pensklaan horizontal membutuhkan strategi manajemen data tambahan  | Penskalaan horizontal sangatlah mudah.                     |
+
+## ACID vs. BASE
+
+### ACID
+
+ACID adalah prinsip fundamental dalam sistem manajemen basis data relasional (RDBMS). Konsep ini bertujuan untuk memastikan bahwa transaksi database dieksekusi dengan aman dan tanpa kehilangan integritas data.
+
+- Atomicity 
+
+  - Transaksi bersifat atomik, artinya semua operasi harus berhasil sepenuhnya atau gagal sepenuhnya.
+  - Jika ada kegagalan di tengah transaksi, maka perubahan yang sudah dilakukan akan dibatalkan (rollback).
+
+  Contoh di SQL
+
+  ```sql  
+  START TRANSACTION;
+  UPDATE accounts SET balance = balance - 100 WHERE id = 1;
+  UPDATE accounts SET balance = balance + 100 WHERE id = 2;
+  COMMIT; -- Semua perubahan dikonfirmasi
+  ```
+
+  Jika terjadi error setelah baris pertama, transaksi akan di-rollback.
+
+- Consistency
+
+  - Database harus selalu berada dalam keadaan yang valid sebelum dan setelah transaksi.
+  - Semua aturan integritas (seperti primary key, foreign key, dan constraints) harus tetap dipenuhi.
+
+- Isolation
+
+  - Transaksi yang berjalan secara bersamaan tidak boleh saling mengganggu.
+
+- Durability
+
+  - Setelah transaksi dikonfirmasi (COMMIT), datanya harus tetap ada, meskipun terjadi kegagalan sistem.
+
+### BASE
+BASE adalah filosofi desain database yang lebih fleksibel dibandingkan ACID, sering digunakan dalam sistem NoSQL dan Big Data.
+
+- Basically Available
+
+  - Sistem selalu bisa merespons permintaan meskipun data tidak dalam keadaan sepenuhnya konsisten
+  - Jika terjadi kegagalan node, sistem tetap bisa berjalan dengan data yang ada.
+
+- Soft State
+
+  - Data di sistem bisa berubah tanpa intervensi eksplisit dari pengguna.
+  - Node yang berbeda mungkin memiliki versi data yang berbeda, tetapi akan disinkronisasi pada akhirnya.
+
+- Eventually consistent
+  - Data tidak selalu langsung konsisten, tetapi akan menjadi konsisten setelah beberapa waktu.
+
+
+Komparasi lebih lengkap dapat dibaca pada sumber berikut: [ACID vs. BASE](https://aws.amazon.com/compare/the-difference-between-acid-and-base-database/)
+
 
 ## Data Model
 
@@ -484,6 +553,91 @@ Dalam Laravel Eloquent, aksi tersebut disebut dengan Eager Loading yang mana bil
 
 Tentu dari jumlah perbedaan antara 2 query dengan N+1 query langsung bisa diketahui mana yang lebih baik dan tidak menyiksa server, terlebih bila nilai N sudah sangat banyak bahkan melebihi 1 juta baris data.
 
+## Migration
+Database Migration adalah proses memindahkan data, skema, atau seluruh sistem database dari satu lingkungan ke lingkungan lain. 
+
+#### Alasan Melakukan Database Migration
+- Peningkatan Kinerja
+
+  Ketika database lama mulai terasa lambat dan tidak efisien, migration dapat dilakukan untuk memanfaatkan teknologi terbaru yang menawarkan performa lebih baik.
+
+- Skalabilitas
+  Migrasi ke sistem yang lebih mendukung pertumbuhan data. Hal tersebut perlu basis data yang bisa menyesuaikan dengan peningkatan beban kerja. 
+
+- Pembaruan atau Integrasi Teknologi baru
+   Memungkinkan penggunaan fitur baru dari database modern.
+
+- Reduksi Biaya
+  Beralih ke solusi yang lebih hemat biaya, misalnya dari lisensi database berbayar ke open-source.
+
+
+#### Jenis Database Migration
+  Database Migration dapat dikategorikan berdasarkan cakupan perubahan yang dilakukan:
+
+  1. Schema Migration
+
+      Migrasi skema berarti melakukan perubahan pada struktur database, seperti:
+      - Menambahkan/menghapus tabel atau kolom.
+      - Mengubah tipe data kolom.
+      - Menambah constraint seperti foreign key, unique, atau index.
+      - Mengubah relasi antar tabel dalam database relasional.
+
+  2. Data Migration
+
+      Proses pemindahan data dari database lama ke yang baru tanpa mengubah strukturnya.
+
+      - Data bisa dimigrasikan penuh sekaligus (batch migration) atau secara bertahap (incremental migration)
+      - Konsistensi data selama proses migrasi perlu sangat diperhatikan
+
+  3. Database Engine Migration
+
+      Migrasi antar sistem database yang berbeda, misalnya:
+
+      - MySQL → PostgreSQL
+      - Oracle → SQL Server
+      - MongoDB → MySQL
+
+  4. Infrastructure Migration
+
+      Perpindahan database dari satu infrastruktur ke infrastruktur lain, misalnya:
+      
+      - On premise -> Cloud
+      - Cloud -> Cloud
+
+#### Teknik Migrasi Database
+Ada beberapa teknik utama yang digunakan dalam migrasi database, tergantung pada kompleksitas dan downtime yang dapat diterima.
+
+- Big Bang Migration
+  
+  - Seluruh database dimigrasikan sekaligus dalam satu waktu
+  - Memerlukan downtime panjang
+
+- Incremental Migration (Zero-Downtime Migration)
+
+  - Proses migrasi dilakukan secara bertahap tanpa menghentikan layanan
+  - Cocok untuk sistem yang memerlukan High Availability (HA)
+
+#### Tools untuk Database Migration
+
+##### Open Source Tools
+
+| **Tool**       | **Deskripsi** |
+|---------------|-------------|
+| **Flyway** | Mengelola database schema migration dengan berbasis script SQL. |
+| **Liquibase** | Mengelola perubahan database menggunakan file YAML/XML/JSON. |
+| **pgLoader** | Tool migrasi untuk PostgreSQL, dapat menangani migrasi dari MySQL, SQLite, dan lainnya. |
+| **Apache NiFi** | ETL tools untuk data migration dengan kemampuan integrasi yang luas. |
+| **Debezium** | Change Data Capture (CDC) untuk migrasi berbasis event streaming. |
+
+##### Cloud-Based & Enterprise Tools
+
+| **Tool** | **Deskripsi** |
+|---------------|-------------|
+| **AWS Database Migration Service (DMS)** | Memigrasikan database ke AWS secara real-time. |
+| **Google Database Migration Service** | Memigrasikan database ke Google Cloud SQL. |
+| **Azure Database Migration Service** | Memigrasikan database ke Azure SQL Database. |
+
+
 ## Pemilihan
 
 Setelah mempelajari cukup banyak terkait database, mungkin kalian bingung bagaimana cara menentukan database apa yang harus digunakan. Untuk memilih database yang paling sesuai, hal paling pertama yang harus disiapkan tentunya perlu dimiliki pemahaman menyeluruh terkait sistem yang akan dibangun dan kebutuhannya. Sebagai contoh, cobalah jawab pertanyaan-pertanyaan berikut,
@@ -495,7 +649,8 @@ Setelah mempelajari cukup banyak terkait database, mungkin kalian bingung bagaim
 5. Apakah ada batasan seperti budget atau lainnya?
 6. Bagaimana skalabilitas aplikasi yang diperlukan?
 
-Untuk menjawab pertanyaan-pertanyaan di atas, bis dimulai dengan mencoba membuat data model untuk memperkirakan kompleksitas serta struktur dari database yang paling sesuai untuk sistem. Misalkan struktur yang terbentuk sangat structured dan memiliki relasi kompleks maka Database Relasional (SQL) akan lebih cocok, tetapi apabila struktur yang terbentuk lebh ke arah semi-structured atau bahkan tidak structured dan memerlukan penyimpanan fleksibel mungkin Database Non-Relasional (NoSQL) dapat lebih sesuai.
+Untuk menjawab pertanyaan-pertanyaan di atas, bisa dimulai dengan mencoba membuat data model untuk memperkirakan kompleksitas serta struktur dari database yang paling sesuai untuk sistem. Misalkan struktur yang terbentuk sangat structured dan memiliki relasi kompleks maka Database Relasional (SQL) akan lebih cocok, tetapi apabila struktur yang terbentuk lebh ke arah semi-structured atau bahkan tidak structured dan memerlukan penyimpanan fleksibel mungkin Database Non-Relasional Bagaimana frekuensi Read dan Writenya?
+Seberapa besar, banyak data maksimal yang mungkin (NoSQL) dapat lebih sesuai.
 
 Skalabilitas serta performa aplikasi juga penting untuk diperhatikan karena database NoSQL biasanya lebih mudah untuk dilakukan scaling dibandingkan database SQL. Kemudian, faktor kesesuaian dengan tech stack yang digunakan juga bisa berpengaruh, misalkan dalam penggunaan bahasa, framework, atau ORM tertentu bisa juga diperhatikan database apa saja yang kira-kira didukung.
 
