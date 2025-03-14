@@ -2,24 +2,28 @@
 
 ## Daftar Isi
 
-- [Daftar Isi](#daftar-isi)
-- [Definisi](#definisi)
-  - [Backend](#backend)
-  - [Backend Engineer/Developer](#backend-engineerdeveloper)
-    - [Backend Engineer](#backend-engineer)
-    - [Backend Developer](#backend-developer)
-    - [Poin Penting Terkait Backend Engineer dan Backend Developer](#poin-penting-terkait-backend-engineering-dan-backend-developer)
-- [Jenis Aplikasi](#jenis-aplikasi)
-  - [Fullstack](#fullstack)
-  - [Frontend vs Backend](#frontend-vs-backend)
-    - [Frontend](#frontend)
-- [Jobdesc](#jobdesc)
-- [Roadmap](#roadmap)
-- [Karir](#karir)
-  - [Peluang Karir](#peluang-karir)
-  - [Admin RPL](#admin-rpl)
-    - [Alumni](#alumni)
-    - [Admin Aktif](#admin-aktif)
+- [Tentang Backend](#tentang-backend)
+  - [Daftar Isi](#daftar-isi)
+  - [Definisi](#definisi)
+    - [Backend](#backend)
+    - [Backend Engineer/Developer](#backend-engineerdeveloper)
+      - [Backend Engineer](#backend-engineer)
+      - [Backend Developer](#backend-developer)
+      - [Poin Penting terkait Backend Engineering dan Backend Developer](#poin-penting-terkait-backend-engineering-dan-backend-developer)
+  - [Jenis Aplikasi](#jenis-aplikasi)
+    - [Fullstack](#fullstack)
+      - [Karakteristik Fullstack Developer](#karakteristik-fullstack-developer)
+    - [Frontend vs Backend](#frontend-vs-backend)
+      - [Frontend](#frontend)
+  - [Jobdesc](#jobdesc)
+  - [Roadmap](#roadmap)
+  - [Karir](#karir)
+    - [Peluang Karir](#peluang-karir)
+      - [Entry-Level Backend Developer](#entry-level-backend-developer)
+      - [Mid-Level Backend Developer](#mid-level-backend-developer)
+      - [Senior / Lead Backend Developer](#senior--lead-backend-developer)
+    - [Admin RPL Angkatan 2019](#admin-rpl-angkatan-2019)
+    - [Admin RPL Angkatan 2020 - 2021 (Aktif)](#admin-rpl-angkatan-2020---2021-aktif)
 
 ## Definisi
 
@@ -268,9 +272,10 @@ Jadi admin backend di lab RPL ini yang masih aktif ada :
 
 - Keanu Fortuna Taufan (**Keanu**)
 
-  <img src="image/Materi_1-Tentang_Backend/1708455221515.png" width="300">
+  <img src="image/Materi_1-Tentang_Backend/keanu.jpg" width="300">
 
-  - Backend Developer di PPDB Jatim 2025 (2025)
+  - Backend Developer di SPMB Jatim 2025 (2025)
+  - Software Engineer di Avalon AI Group (PT. Automasi Visi Analitika Optima) (2025)
 
 - Aloysius Juan Farrel Lumentut (**Juan**)
 
