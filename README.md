@@ -2,12 +2,12 @@
 
 ## Description
 
-Modul Pembelajaran untuk Sesi Materi Open Recruitment Administrator Laboratorium Rekayasa Perangkat Lunak 2024.
+Modul Pembelajaran untuk Sesi Materi Open Recruitment Administrator Laboratorium Rekayasa Perangkat Lunak 2025.
 
 ## Authors
 
 | Nama                  | GitHub                                  | LinkedIn                                                               |
 | --------------------- | --------------------------------------- | ---------------------------------------------------------------------- |
-| Kevin Nathanael Halim | [zetsux](https://github.com/zetsux)     | [Kevin Nathanael Halim](https://linkedin.com/in/kevin-nathanael-halim) |
-| Rizky Alifiyah Rahma  | [Ikikk](https://github.com/Ikikk)       | [Rizky Alifiyah](https://linkedin.com/in/rizkyalifiyah04/)             |
-| M. Naufal Badruttamam | [Caknoooo](https://github.com/Caknoooo) | [M Naufal Badruttamam](https://linkedin.com/in/mnaufalbadruttamam)     |
+| Aloysius Juan Farrel Lumentut | [clarkkiee](https://github.com/clarkkiee)     | [Aloysius Juan Farrel Lumentut](https://www.linkedin.com/in/aloysiusjuanfarrellumentut/) |
+| Fawwas Aldy Nurramdhan Kaisar  | [fawwasaldy](https://github.com/fawwasaldy)                 |
+| Keanu Fortuna Taufan | [keanutaufan](https://github.com/keanutaufan) |     |
