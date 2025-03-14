@@ -162,13 +162,13 @@ Untuk menjadi seorang Backend Developer, ada beberapa hal utama yang harus teman
 - Deployment dan DevOps
 
 Kalau kalian ingin explore lebih lanjut tentang apa yang perlu dipelajari, roadmap berikut mungkin bisa membantu kalian😀👉
-![Roadmap Backend](image/Materi_1-Tentang_Backend/roadmap_backend.png)
+![Roadmap Backend](image/Materi_1-Tentang_Backend/roadmap_backend.jpg)
 
 Emang harus semua dipelajari ya? AHAHAHAH engga dong, roadmap di atas hanyalah panduan bukan persyaratan mutlak untuk menjadi seorang Backend Developer. Kalau semuanya beneran harus dipelajari, ya tipes rek😩
 
 ![kerja kerja kerja tipes](image/Materi_1-Tentang_Backend/sddefault.jpg)
 
-Karena setiap proyek pengembangan web pasti memerlukan tech stack yang berbeda-beda sesuai dengan kebutuhan, sehingga hanya beberapa item roadmap yang diperlukan. Tetapi bukankah lebih baik kalau kita mempelajari dan menguasai suatu hal terlebih dahulu sebelum terjun ke lapangan? (ini tips biar banyak proyekan kayak cakno🤑)
+Karena setiap proyek pengembangan web pasti memerlukan tech stack yang berbeda-beda sesuai dengan kebutuhan, sehingga hanya beberapa item roadmap yang diperlukan. Tetapi bukankah lebih baik kalau kita mempelajari dan menguasai suatu hal terlebih dahulu sebelum terjun ke lapangan?
 
 ## Karir
 
@@ -213,7 +213,7 @@ Nah terus gimana sih karir yang udah ditempuh para admin backend di lab RPL ini?
 
   <img src="image/Materi_1-Tentang_Backend/1708455598061.png" width="300">
 
-  - Lead Software Engineer di MyITSPuspresnas (2023 - Sekarang)
+  - Lead Software Engineer di MyITSPuspresnas (2023)
   - Backend Developer Intern di Blibli.com (2022)
 
 - Fairuz Hasna Rofifah (**Hasna**)
@@ -223,19 +223,11 @@ Nah terus gimana sih karir yang udah ditempuh para admin backend di lab RPL ini?
   - Software Engineer di Samsung R&D Institute Indonesia (2023 - Sekarang)
   - Backend Engineer Intern di Telkom Indonesia (2022)
 
-Beberapa dari kalian mungkin ngga asing denger nama mas-mbaknya. Kedua mas-mbak diatas merupakan alumni admin backend lab RPL angkatan 2019 yang udah lulus dan sedang menempuh karirnya masing-masing.
-
-Eits, tunggu bentar. Para admin backend lab RPL yang masih aktif ngga kalah jago loh. Ada siapa aja tuh?
-
-### Admin RPL Angkatan 2020 - 2021 (Aktif)
-
-Jadi admin backend di lab RPL ini yang masih aktif ada :
-
 - Alexander (**Alex**)
 
   <img src="image/Materi_1-Tentang_Backend/1708455192360.png" width="300">
 
-  - Senior Backend Developer di PPDB Jatim 2024 (2024 - Sekarang)
+  - Senior Backend Developer di PPDB Jatim 2024 (2024)
   - Backend Engineer Intern di Tokopedia (2023)
 
 - Made Rianja Richo Dainino (**Richo**)
@@ -245,23 +237,49 @@ Jadi admin backend di lab RPL ini yang masih aktif ada :
   - Lead Backend Developer Intern di Filinmovie (2023)
   - Quality Assurance di PPDB Jatim 2023 (2023)
 
+Beberapa dari kalian mungkin ngga asing denger nama mas-mbaknya. Seluruh mas-mbak diatas merupakan alumni admin backend lab RPL yang udah lulus dan sedang menempuh karirnya masing-masing.
+
+Eits, tunggu bentar. Para admin backend lab RPL yang masih aktif ngga kalah jago loh. Ada siapa aja tuh?
+
+### Admin RPL Angkatan 2020 - 2021 (Aktif)
+
+Jadi admin backend di lab RPL ini yang masih aktif ada :
+
 - M. Naufal Badrutammam (**Cakno**)
 
   <img src="image/Materi_1-Tentang_Backend/1708455221515.png" width="300">
 
-  - Mid-level Backend Developer di PPDB Jatim 2024 (2024 - Sekarang)
-  - Lead Backend Engineer di SRE ITS 2024 (2023 - Sekarang)
+  - Mid-level Backend Developer di PPDB Jatim 2024 (2024)
+  - Lead Backend Engineer di SRE ITS 2024 (2023)
 
 - Kevin Nathanael Halim (**Kevin**)
 
   <img src="image/Materi_1-Tentang_Backend/1708455232199.png" width="300">
 
-  - Mid-Level Backend Developer di PPDB Jatim 2024 (2024 - Sekarang)
-  - Mid-Level Backend Developer Intern di Alpha Academy (2024 - Sekarang)
+  - Mid-Level Backend Developer di PPDB Jatim 2024 (2024)
+  - Mid-Level Backend Developer Intern di Alpha Academy (2024)
 
 - Rizky Alifiyah Rahma (**Iky**)
 
   <img src="image/Materi_1-Tentang_Backend/1708455255099.png" width="300">
 
-  - Mid-Level Backend Developer Intern di MyITS Archive (2023 - Sekarang)
-  - Backend Developer TD-GCS di Bayucaraka ITS (2023 - Sekarang)
+  - Mid-Level Backend Developer Intern di MyITS Archive (2023)
+  - Backend Developer TD-GCS di Bayucaraka ITS (2023)
+
+- Keanu Fortuna Taufan (**Keanu**)
+
+  <img src="image/Materi_1-Tentang_Backend/1708455221515.png" width="300">
+
+  - Backend Developer di PPDB Jatim 2025 (2025)
+
+- Aloysius Juan Farrel Lumentut (**Juan**)
+
+  <img src="image/Materi_1-Tentang_Backend/juan.jpg" width="300">
+
+  - Backend Developer di PPDB Jatim 2025 (2025)
+
+- Fawwas Aldy Nurramdhan Kaisar (**Aldy**)
+
+  <img src="image/Materi_1-Tentang_Backend/1708455221515.png" width="300">
+
+  - Backend Developer di PPDB Jatim 2025 (2025)
