@@ -291,6 +291,6 @@ Jadi admin backend di lab RPL ini yang masih aktif ada :
 
 - Fawwas Aldy Nurramdhan Kaisar (**Aldy**)
 
-  <img src="image/Materi_1-Tentang_Backend/1708455221515.png" width="300">
+  <img src="image/Materi_1-Tentang_Backend/1707124984733.jpg" width="300">
 
   - Backend Developer di PPDB Jatim 2025 (2025)
