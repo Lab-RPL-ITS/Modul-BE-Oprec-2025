@@ -255,6 +255,9 @@ Jadi admin backend di lab RPL ini yang masih aktif ada :
 
   - Mid-level Backend Developer di PPDB Jatim 2024 (2024)
   - Lead Backend Engineer di SRE ITS 2024 (2023)
+  - Lead Backend Developer di SPMB Jatim 2025 (2025)
+  - Chief Technology Officer di BengCare (2024 - Sekarang)
+  - Part-time Remote di Perusahaan Jepang (2025)
 
 - Kevin Nathanael Halim (**Kevin**)
 
@@ -262,6 +265,7 @@ Jadi admin backend di lab RPL ini yang masih aktif ada :
 
   - Mid-Level Backend Developer di PPDB Jatim 2024 (2024)
   - Mid-Level Backend Developer Intern di Alpha Academy (2024)
+  - Lead Backend Developer di SPMB Jatim 2025 (2025)
 
 - Rizky Alifiyah Rahma (**Iky**)
 
@@ -269,6 +273,8 @@ Jadi admin backend di lab RPL ini yang masih aktif ada :
 
   - Mid-Level Backend Developer Intern di MyITS Archive (2023)
   - Backend Developer TD-GCS di Bayucaraka ITS (2023)
+  - Software Engineer Internship di PT HM Sampoerna (2024 - Sekarang)
+  - Senior Backend Developer TD-GCS di Bayucaraka ITS (2024 - Sekarang)
 
 - Keanu Fortuna Taufan (**Keanu**)
 
