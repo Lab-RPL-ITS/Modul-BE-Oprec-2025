@@ -59,6 +59,7 @@
   - [Implementasi](#implementasi)
   - [Tugas](#tugas)
     - [Ketentuan:](#ketentuan)
+    - [Deliverables](#deliverables)
 
 ## Definisi & Fungsi
 
@@ -758,5 +759,10 @@ Buat sebuah aplikasi yang menggunakan database. Jenis aplikasi, studi kasus, dan
     - Relational Database: Ada query yang butuh JOIN.
     - Document Database (MongoDB): Ada data yang dinamis.
     - Search Engine Database (ElasticSearch, Solr, pgVector): Ada fitur pencarian kompleks yang tidak bisa ditangani full-text search biasa.
+
+
+### Deliverables
+
+Deliverable yang dikumpulkan berupa kode program dalam repository. Apabila terdapat dokumen pendukung (seperti ERD), lampirkan di dalam repository. Repository wajib di-set publik dan link repository dikirim pada form pengumpulan (link menyusul).
 
 Buat aplikasimu seunik dan sekreatif mungkin! 😁👍
