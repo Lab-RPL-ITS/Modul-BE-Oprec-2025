@@ -2,46 +2,63 @@
 
 ## Daftar Isi
 
-- [Daftar Isi](#daftar-isi)
-- [Definisi & Fungsi](#definisi--fungsi)
-  - [Definisi](#definisi)
-  - [Fungsi](#fungsi)
-- [Jenis & Contoh](#jenis--contoh)
-  - [Relational](#relational)
-    - [Kelebihan Relational Database](#kelebihan-relational-database)
-    - [Contoh Relational Database](#contoh-relational-database)
-  - [Non-Relational](#non-relational)
-    - [Kelebihan Non-Relational Database](#kelebihan-non-relational-database)
-    - [Contoh Non-Relational Database](#contoh-non-relational-database)
-  - [Relational Database vs Non-Relational Database](#relational-database-vs-non-relational-database)
-- [Data Model](#data-model)
-  - [CDM](#cdm)
-  - [PDM](#pdm)
-- [Query](#query)
-  - [Bagian-Bagian Query](#bagian-bagian-query)
-    - [DDL (Data Definition Language)](#ddl-data-definition-language)
-    - [DML (Data Manipulation Language)](#dml-data-manipulation-language)
-    - [DCL (Data Control Language)](#dcl-data-control-language)
-  - [Contoh Query Sederhana](#contoh-query-sederhana)
-  - [Join](#join)
-  - [Subquery dan Nested Query](#subquery-dan-nested-query)
-    - [Subquery](#subquery)
-    - [Nested Query](#nested-query)
-  - [Views](#views)
-  - [Indexes](#indexes)
-    - [Jenis-jenis Index](#jenis-jenis-index)
-    - [Contoh Penggunaan Index](#contoh-penggunaan-index)
-    - [Kelebihan dan Kekurangan](#kelebihan-dan-kekurangan)
-- [Transaction](#transaction)
-  - [Tujuan Transaction](#tujuan-transaction)
-  - [Bagian-bagian Transaction](#bagian-bagian-transaction)
-  - [Contoh Penggunaan Transaction](#contoh-penggunaan-transaction)
-- [Optimalisasi & Normalisasi](#optimalisasi--normalisasi)
-  - [Normalisasi](#normalisasi)
-  - [Instagram Justin Bieber Problem](#instagram-justin-bieber-problem)
-  - [N+1 Problem](#n1-problem)
-- [Pemilihan](#pemilihan)
-- [Implementasi](#implementasi)
+- [Database](#database)
+  - [Daftar Isi](#daftar-isi)
+  - [Definisi \& Fungsi](#definisi--fungsi)
+    - [Definisi](#definisi)
+    - [Fungsi](#fungsi)
+  - [Jenis \& Contoh](#jenis--contoh)
+    - [Relational](#relational)
+      - [Kelebihan Relational Database](#kelebihan-relational-database)
+      - [Contoh Relational Database](#contoh-relational-database)
+    - [Non-Relational](#non-relational)
+      - [Kelebihan Non-Relational Database](#kelebihan-non-relational-database)
+      - [Jenis-jenis Non-Relational Database](#jenis-jenis-non-relational-database)
+        - [Document Based Database](#document-based-database)
+        - [Key Value Store](#key-value-store)
+        - [Column Oriented Database](#column-oriented-database)
+        - [Graph Database](#graph-database)
+    - [Relational Database vs Non-Relational Database](#relational-database-vs-non-relational-database)
+  - [ACID vs. BASE](#acid-vs-base)
+    - [ACID](#acid)
+    - [BASE](#base)
+  - [Data Model](#data-model)
+    - [CDM](#cdm)
+    - [PDM](#pdm)
+  - [Query](#query)
+    - [Bagian-Bagian Query](#bagian-bagian-query)
+      - [DDL (Data Definition Language)](#ddl-data-definition-language)
+      - [DML (Data Manipulation Language)](#dml-data-manipulation-language)
+      - [DCL (Data Control Language)](#dcl-data-control-language)
+    - [Contoh Query Sederhana](#contoh-query-sederhana)
+    - [Join](#join)
+    - [Subquery dan Nested Query](#subquery-dan-nested-query)
+      - [Subquery](#subquery)
+      - [Nested Query](#nested-query)
+    - [Views](#views)
+    - [Indexes](#indexes)
+      - [Jenis-jenis Index](#jenis-jenis-index)
+      - [Contoh Penggunaan Index](#contoh-penggunaan-index)
+      - [Kelebihan dan Kekurangan](#kelebihan-dan-kekurangan)
+  - [Transaction](#transaction)
+    - [Tujuan Transaction](#tujuan-transaction)
+    - [Bagian-bagian Transaction](#bagian-bagian-transaction)
+    - [Contoh Penggunaan Transaction](#contoh-penggunaan-transaction)
+  - [Optimalisasi \& Normalisasi](#optimalisasi--normalisasi)
+    - [Normalisasi](#normalisasi)
+    - [Instagram Justin Bieber Problem](#instagram-justin-bieber-problem)
+    - [N+1 Problem](#n1-problem)
+  - [Migration](#migration)
+      - [Alasan Melakukan Database Migration](#alasan-melakukan-database-migration)
+      - [Jenis Database Migration](#jenis-database-migration)
+      - [Teknik Migrasi Database](#teknik-migrasi-database)
+      - [Tools untuk Database Migration](#tools-untuk-database-migration)
+        - [Open Source Tools](#open-source-tools)
+        - [Cloud-Based \& Enterprise Tools](#cloud-based--enterprise-tools)
+  - [Pemilihan](#pemilihan)
+  - [Implementasi](#implementasi)
+  - [Tugas](#tugas)
+    - [Ketentuan:](#ketentuan)
 
 ## Definisi & Fungsi
 
@@ -701,3 +718,45 @@ conn.close()
 Walaupun kedua potongan kode di atas terlihat berbeda, pada dasarnya alur kerjanya tidak jauh berbeda. Mungkin bila diperhatikan, sebelum bisa bermain-main dengan query kedua potongan kode di atas selalu diawali dengan fungsi `connect()`. Sesuai dengan namanya, itu adalah fungsi yang menghubungkan program kita dengan server database yang konfigurasinya kita masukkan ke dalam fungsi sebagai parameter. Biasanya terdapat `host` dari server, `user` yang akan digunakan untuk membuat koneksi dengan database beserta `password`nya, kemudian juga `port` dari server yang biasanya pada PostgreSQL menggunakan 5432 sementara pada MySQL biasanya menggunakan 3306, dan juga `database` untuk memilih database spesifik.
 
 Setelah koneksi terbentuk, barulah kita dapat berinteraksi dengan database sesuai dengan izin atau permission yang dimiliki oleh user yang kita gunakan. Interaksi tentunya dilakukan melalui query seperti yang sudah kita pelajari sebelumnya. Nah, sekarang saatnya kalian melakukan eksplorasi lebih dan mempraktekkan semua yang sudah dipelajari disini, selamat mencoba!
+
+## Tugas
+
+Buat sebuah aplikasi yang menggunakan database. Jenis aplikasi, studi kasus, dan platform bebas, misalnya:
+
+- ✅ CLI app yang menyimpan data di MS SQL
+- ✅ Webapp/API dengan MongoDB + Redis cache
+- ✅ Aplikasi Android dengan SQLite
+- ✅ Dan lain-lain
+
+### Ketentuan:
+1. Gunakan minimal satu database.
+    - Bisa memakai relational (MySQL, PostgreSQL, dsb.) atau non-relational (MongoDB, Redis, dsb.).
+    - Bisa mix-and-match database (misalnya, MongoDB + Redis).
+    - Jangan overengineering—pilih database sesuai kebutuhan aplikasi.
+
+2. Gunakan bahasa pemrograman & framework bebas.
+    - Bisa pakai atau tidak pakai framework.
+    - Jelaskan alasan memilih database dan framework yang digunakan.
+
+3. Buat struktur database & diagramnya:
+    - Jika pakai relational database, buat ERD.
+    - Jika pakai non-relational database, buat diagram yang menggambarkan data & relasinya.
+    - Jika database schemaless, jelaskan karakteristik datanya.
+
+4. Buat fitur-fitur aplikasi:
+    - Minimal harus ada operasi CRUD (Create, Read, Update, Delete).
+    - Fitur lainnya bebas & sekreatif mungkin.
+
+5. Justifikasi pemilihan database:
+    - Jelaskan kenapa memilih tipe database tertentu dan bukan tipe lainnya.
+    - Misalnya:
+      - "Saya memilih PostgreSQL karena aplikasinya butuh transaksi kompleks dengan ACID compliance."
+      - "Saya memakai MongoDB karena struktur datanya schemaless dan cocok untuk karakteristik data yang dinamis."
+      - "Saya menggunakan Redis untuk caching karena butuh akses cepat ke data yang sering diambil."
+
+7. Gunakan fitur penting dari database yang dipilih. Contohnya:
+    - Relational Database: Ada query yang butuh JOIN.
+    - Document Database (MongoDB): Ada data yang dinamis.
+    - Search Engine Database (ElasticSearch, Solr, pgVector): Ada fitur pencarian kompleks yang tidak bisa ditangani full-text search biasa.
+
+Buat aplikasimu seunik dan sekreatif mungkin! 😁👍
