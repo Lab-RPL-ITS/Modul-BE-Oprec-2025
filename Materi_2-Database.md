@@ -763,6 +763,6 @@ Buat sebuah aplikasi yang menggunakan database. Jenis aplikasi, studi kasus, dan
 
 ### Deliverables
 
-Deliverable yang dikumpulkan berupa kode program dalam repository. Apabila terdapat dokumen pendukung (seperti ERD), lampirkan di dalam repository. Repository wajib di-set publik dan link repository dikirim pada form pengumpulan [berikut](https://links.labse.id/go/TugasMateri1BE).
+Deliverable yang dikumpulkan berupa kode program dalam repository. Apabila terdapat dokumen pendukung (seperti ERD), lampirkan di dalam repository. Repository wajib di-set publik dan link repository dikirim pada form pengumpulan berikut [PENGUMPULAN](https://links.labse.id/go/PengumpulanTugas1BE).
 
 Buat aplikasimu seunik dan sekreatif mungkin! 😁👍
