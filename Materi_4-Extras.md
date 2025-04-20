@@ -667,4 +667,4 @@ Heroes dibebaskan untuk menambah fitur-fitur lain sesuai kreativitas dan kemampu
 
 ### Deliverables
 
-Deliverable yang dikumpulkan berupa kode program dalam repository. Repository wajib di-set publik dan link repository dikirim pada form pengumpulan yang akan dicantumkan menyusul. Seluruh hal yang berkaitan tentang penugasan 2 seperti link dokumentasi API dicantumkan di dalam repository.
+Deliverable yang dikumpulkan berupa kode program dalam repository. Repository wajib di-set publik dan link repository dikirim pada [form ini](https://forms.gle/Rw92mdqJCpD7n8fJ9). Seluruh hal yang berkaitan tentang penugasan 2 seperti link dokumentasi API dicantumkan di dalam repository.
